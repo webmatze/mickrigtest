@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Mickrigtest.js Test</title>
+</head>
+<body>
+  <h1>Mickrigtest.js Test Suite</h1>
+  <div id="testoutput"></div>
+  <script type="text/javascript" src="mickrigtest.js"></script>
+  <script type="text/javascript">
+  window.onload = function() {
+    var testoutput = document.getElementById("testoutput");
+    testoutput.innerHTML += "Test 1: " + expect('Hello World').notTo().be("Hello World") + "<br />";
+    testoutput.innerHTML += "Test 2: " + expect('Hello World').to().be("what?") + "<br />";
+    testoutput.innerHTML += "Test 3: " + expect(true).to().beFalse() + "<br />";
+    testoutput.innerHTML += "Test 4: " + expect(true).notTo().beTrue() + "<br />";
+  }
+  </script>
+</body>
+</html>
