@@ -8,7 +8,7 @@ expect = function(test, desc) {
     if (toCheck === truthy) {
       return true;
     } else {
-      return "expected '" + (desc ? desc : test) + "' " + (truthy ? "to be" : "not to be") + " '" + checkValue + "'";
+      return "expected '" + (desc ? desc : test) + "' " + (truthy ? "to be" : "not to be") + (" '" + checkValue + "'");
     }
   };
   expectations = {

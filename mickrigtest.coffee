@@ -1,7 +1,7 @@
 expect = (test, desc) ->
   truthy = true
   check = (toCheck, checkValue) ->
-    (if toCheck is truthy then true else "expected '" + ((if desc then desc else test)) + "' " + ((if truthy then "to be" else "not to be")) + " '" + checkValue + "'")
+    (if toCheck is truthy then true else "expected '" + ((if desc then desc else test)) + "' " + ((if truthy then "to be" else "not to be")) + " '#{checkValue}'")
 
   expectations =
     be: (value) ->
