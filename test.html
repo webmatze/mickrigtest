@@ -1,18 +1,22 @@
+<!doctype html>
 <html>
 <head>
+  <meta charset='utf-8'>
   <title>MickrigTest.js Test</title>
 </head>
 <body>
   <h1>MickrigTest.js Test Suite</h1>
   <div id="testoutput"></div>
   <script type="text/javascript" src="mickrigtest.js"></script>
+  <script type="text/javascript" src="mickrigtestcase.js"></script>
+  <script type="text/javascript" src="mickrigtest_test.js"></script>
   <script type="text/javascript">
   window.onload = function() {
     var testoutput = document.getElementById("testoutput");
-    testoutput.innerHTML += "Test 1: " + expect('Hello World').notTo().be("Hello World") + "<br />";
-    testoutput.innerHTML += "Test 2: " + expect('Hello World').to().be("what?") + "<br />";
-    testoutput.innerHTML += "Test 3: " + expect(true).to().beFalse() + "<br />";
-    testoutput.innerHTML += "Test 4: " + expect(true).notTo().beTrue() + "<br />";
+    // Outputs the returned messages of the michrigtest_test.js test case
+    for(var i = 0; i < messages.length; i++) {
+      testoutput.innerHTML += messages[i] + "<br />";
+    }
   }
   </script>
 </body>
