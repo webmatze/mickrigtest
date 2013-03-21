@@ -47,4 +47,12 @@ testcase.test("successful test should not throw exception", function() {
   }).notTo().throwException();
 });
 
+testcase.test("should be able to wrap a test into an anonymous function", function() {
+  return expect(function() {
+    return expect(function() {
+      return true;
+    }).to().beTrue();
+  }).notTo().throwException();
+});
+
 messages = testcase.run();

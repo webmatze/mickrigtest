@@ -30,4 +30,7 @@ testcase.test "failing test should throw exception", ->
 testcase.test "successful test should not throw exception", ->
   expect(-> expect(true).to().beTrue()).notTo().throwException()
 
+testcase.test "should be able to wrap a test into an anonymous function", ->
+  expect(-> expect(-> true).to().beTrue()).notTo().throwException()
+
 messages = testcase.run()
