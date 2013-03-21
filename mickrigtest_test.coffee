@@ -24,4 +24,10 @@ testcase.test "expect(true).to() should have beTrue() function", ->
 testcase.test "expect(true).to() should have beFalse() function", ->
   expect(typeof expect(true).to().beFalse).to().be('function')
 
+testcase.test "failing test should throw exception", ->
+  expect(-> expect(true).to().beFalse()).to().throwException()
+
+testcase.test "successful test should not throw exception", ->
+  expect(-> expect(true).to().beTrue()).notTo().throwException()
+
 messages = testcase.run()

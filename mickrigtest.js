@@ -2,8 +2,16 @@
 var expect;
 
 expect = function(test, desc) {
-  var check, expectations, truthy;
+  var check, exception, expectations, truthy;
   truthy = true;
+  exception = false;
+  try {
+    if (typeof test === 'function') {
+      test = test();
+    }
+  } catch (error) {
+    exception = error;
+  }
   check = function(toCheck, checkValue) {
     if (toCheck === truthy) {
       return true;
@@ -20,6 +28,9 @@ expect = function(test, desc) {
     },
     beFalse: function() {
       return check(test === false, "false");
+    },
+    throwException: function() {
+      return check(typeof exception === 'string', "an exception");
     }
   };
   return {

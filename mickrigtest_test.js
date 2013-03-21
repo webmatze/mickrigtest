@@ -35,4 +35,16 @@ testcase.test("expect(true).to() should have beFalse() function", function() {
   return expect(typeof expect(true).to().beFalse).to().be('function');
 });
 
+testcase.test("failing test should throw exception", function() {
+  return expect(function() {
+    return expect(true).to().beFalse();
+  }).to().throwException();
+});
+
+testcase.test("successful test should not throw exception", function() {
+  return expect(function() {
+    return expect(true).to().beTrue();
+  }).notTo().throwException();
+});
+
 messages = testcase.run();
