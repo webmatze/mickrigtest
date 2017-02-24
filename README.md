@@ -1,4 +1,4 @@
-mickrigtest [![NPM version](https://img.shields.io/npm/v/mickrigtest.svg?style=flat)](https://npmjs.com/package/mickrigtest) [![NPM downloads](https://img.shields.io/npm/dm/mickrigtest.svg?style=flat)](https://npmjs.com/package/mickrigtest)
+mickrigtest [![NPM version](https://img.shields.io/npm/v/mickrigtest.svg?style=flat)](https://npmjs.com/package/mickrigtest) [![NPM downloads](https://img.shields.io/npm/dm/mickrigtest.svg?style=flat)](https://npmjs.com/package/mickrigtest) [![Coverage Status](https://coveralls.io/repos/github/webmatze/mickrigtest/badge.svg?branch=master)](https://coveralls.io/github/webmatze/mickrigtest?branch=master)
 ==============
 
 > a minimal testing framework for JavaScript written in CoffeeScript
