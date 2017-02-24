@@ -1,7 +1,7 @@
-mickrigtest-js
+mickrigtest
 ==============
 
-**MickrigTest.js** is a minimal test system for JavaScript written in CoffeeScript
+**mickrigtest** is a minimal testing framework for JavaScript written in CoffeeScript
 
 Installing via npm
 ------------------
@@ -27,10 +27,10 @@ Running Tests
     npm run test
 
 
-Usage of mickrigtest.js
+Usage of mickrigtest
 -----------------------
 
-require mickrigtest:
+require expect from mickrigtest:
 
     var expect = require('mickrigtest').expect
 
@@ -68,7 +68,7 @@ Usage of MickrigTestCase
 ------------------------
 
 You can also build test cases by using the **MickrigTestCase** class.
-To use it you have to require *mickrigtestcase.js*, too.
+To use it you have to require it from *mickrigtest*, too.
 
     var MickrigTestCase = require('mickrigtest').MickrigTestCase
 
