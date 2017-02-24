@@ -6,7 +6,19 @@ mickrigtest-js
 Compiling the CoffeeScript
 --------------------------
 
-    coffee -clb mickrigtest.coffee
+Using coffee cli:
+
+    coffee -cb mickrigtest.coffee
+
+Or using a npm task:
+
+    npm run compile
+
+
+Running Tests
+-------------
+
+    npm run test
 
 Usage of mickrigtest.js
 -----------------------
@@ -72,4 +84,4 @@ You can use this Array to display the messages on your page or displaying them u
 Copyright
 ---------
 
-Copyright 2013 by Mathias Karstädt
+Copyright 2013-2017 by Mathias Karstädt
