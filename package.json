@@ -1,6 +1,6 @@
 {
   "name": "mickrigtest-js",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "a minimal testing system for JavaScript",
   "main": "build/mickrigtest.js",
   "scripts": {
