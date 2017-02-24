@@ -1,7 +1,7 @@
-mickrigtest
+mickrigtest [![NPM version](https://img.shields.io/npm/v/mickrigtest.svg?style=flat)](https://npmjs.com/package/mickrigtest) [![NPM downloads](https://img.shields.io/npm/dm/mickrigtest.svg?style=flat)](https://npmjs.com/package/mickrigtest)
 ==============
 
-**mickrigtest** is a minimal testing framework for JavaScript written in CoffeeScript
+> a minimal testing framework for JavaScript written in CoffeeScript
 
 Installing via npm
 ------------------
