@@ -3,6 +3,12 @@ mickrigtest-js
 
 **MickrigTest.js** is a minimal test system for JavaScript written in CoffeeScript
 
+Installing via npm
+------------------
+
+    npm install -g mickrigtest
+
+
 Compiling the CoffeeScript
 --------------------------
 
@@ -20,12 +26,13 @@ Running Tests
 
     npm run test
 
+
 Usage of mickrigtest.js
 -----------------------
 
 require mickrigtest:
 
-    var expect = require('mickrigtest')
+    var expect = require('mickrigtest').expect
 
 Then you can test something to be true:
 
@@ -63,7 +70,7 @@ Usage of MickrigTestCase
 You can also build test cases by using the **MickrigTestCase** class.
 To use it you have to require *mickrigtestcase.js*, too.
 
-    var MickrigTestCase = require('mickrigtestcase')
+    var MickrigTestCase = require('mickrigtest').MickrigTestCase
 
 Then you can write your first test case:
 

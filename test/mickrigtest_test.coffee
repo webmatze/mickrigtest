@@ -1,5 +1,7 @@
-MickrigTestCase = require('../build/mickrigtestcase')
-expect = require('../build/mickrigtest')
+mickrigtest = require('../build/mickrigtest')
+
+MickrigTestCase = mickrigtest.MickrigTestCase
+expect = mickrigtest.expect
 
 module.exports = testcase = new MickrigTestCase("MickrigTest")
 
