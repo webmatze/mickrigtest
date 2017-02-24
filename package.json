@@ -4,7 +4,7 @@
   "description": "a minimal testing system for JavaScript",
   "main": "build/mickrigtest.js",
   "scripts": {
-    "compile": "coffee -o build -b -c *.coffee",
+    "compile": "coffee -o build -b -c src/*.coffee",
     "pretest": "coffee -o test -b -c test/*.coffee",
     "test": "node -e \"require('./test/mickrigtest_test').run().forEach(function(t){ console.log(t)})\""
   },
