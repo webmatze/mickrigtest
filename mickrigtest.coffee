@@ -1,4 +1,4 @@
-expect = (test, desc) ->
+module.exports = expect = (test, desc) ->
   truthy = true
   exception = false
   try
@@ -7,7 +7,7 @@ expect = (test, desc) ->
     exception = error
 
   check = (toCheck, checkValue) ->
-    (if toCheck is truthy then true else throw "expected '" + ((if desc then desc else test)) + "' " + ((if truthy then "to be" else "not to be")) + " '#{checkValue}'")
+    (if toCheck is truthy then true else throw new Error("expected '" + ((if desc then desc else test)) + "' " + ((if truthy then "to be" else "not to be")) + " '#{checkValue}'"))
 
   expectations =
     be: (value) ->
@@ -29,3 +29,4 @@ expect = (test, desc) ->
   to: ->
     truthy = true
     expectations
+

@@ -1,4 +1,4 @@
-MickrigTestCase = (name) ->
+module.exports = MickrigTestCase = (name) ->
   tests = new Array()
   test: (name, test) ->
     tests.push

@@ -1,4 +1,7 @@
-testcase = new MickrigTestCase("MickrigTest")
+MickrigTestCase = require('./mickrigtestcase')
+expect = require('./mickrigtest')
+
+module.exports = testcase = new MickrigTestCase("MickrigTest")
 
 testcase.test "expect() should be an object", ->
   expect(typeof expect()).to().be('object')
