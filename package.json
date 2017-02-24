@@ -2,10 +2,10 @@
   "name": "mickrigtest-js",
   "version": "1.0.0",
   "description": "a minimal testing system for JavaScript",
-  "main": "mickrigtest.js",
+  "main": "build/mickrigtest.js",
   "scripts": {
-    "compile": "coffee -b -c *.coffee",
-    "test": "node -e \"require('./mickrigtest_test').run().forEach(function(t){ console.log(t)})\""
+    "compile": "coffee -o build -b -c *.coffee",
+    "test": "node -e \"require('./build/mickrigtest_test').run().forEach(function(t){ console.log(t)})\""
   },
   "repository": {
     "type": "git",
