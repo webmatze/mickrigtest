@@ -23,9 +23,9 @@ Running Tests
 Usage of mickrigtest.js
 -----------------------
 
-Include the script into your HTML page:
+require mickrigtest:
 
-    <script type="text/javascript" src="mickrigtest.js"></script>
+    var expect = require('mickrigtest')
 
 Then you can test something to be true:
 
@@ -61,10 +61,10 @@ Usage of MickrigTestCase
 ------------------------
 
 You can also build test cases by using the **MickrigTestCase** class.
-To use it you have to include the *mickrigtestcase.js* into you page, too.
+To use it you have to require *mickrigtestcase.js*, too.
 
-    <script type="text/javascript" src="mickrigtestcase.js"></script>
-    
+    var MickrigTestCase = require('mickrigtestcase')
+
 Then you can write your first test case:
 
     testcase = new MickrigTestCase("My first test");
