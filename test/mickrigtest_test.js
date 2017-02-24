@@ -60,3 +60,7 @@ testcase.test("should be able to wrap a test into an anonymous function", functi
 });
 
 messages = testcase.run();
+
+messages.forEach(function(m) {
+  return console.log(m);
+});
