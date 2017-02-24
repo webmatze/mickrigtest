@@ -1,0 +1,27 @@
+{
+  "name": "mickrigtest-js",
+  "version": "1.0.0",
+  "description": "a minimal testing system for JavaScript",
+  "main": "mickrigtest.js",
+  "scripts": {
+    "compile": "coffee -b -c *.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmatze/mickrigtest-js.git"
+  },
+  "keywords": [
+    "test",
+    "framework"
+  ],
+  "author": "Mathias Karstädt <mathias.karstaedt@gmail.com> (http://mathiaskarstaedt.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webmatze/mickrigtest-js/issues"
+  },
+  "homepage": "https://github.com/webmatze/mickrigtest-js#readme",
+  "dependencies": {
+    "coffeescript": "2.0.0-alpha1"
+  }
+}
